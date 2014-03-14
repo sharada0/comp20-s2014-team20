@@ -40,10 +40,12 @@ Group 20: Manvi Goyal, Shriya Nevatia, Sharada Sant, Krishna Soni
         12. User profile page (inc. favorites and dietary restrictions)
 
 Mobile Designs: 
-Sign In Screen, Selection Screen, and Search Results
-![Sign In][1] ![Selection Screen][2] ![Search Results][3]
-Restaurant Page and User Profile:
-![Restaurant Page][4] ![User Profile][5]
+Sign In Screen and Selection Screen 
+![Sign In][1] ![Selection Screen][2] 
+Search Results and Restaurant Page
+![Search Results][3] ![Restaurant Page][4] 
+User Profile
+![User Profile][5]
 
 Desktop Designs:
 Login and home page:
