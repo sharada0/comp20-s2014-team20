@@ -82,3 +82,7 @@ User profile page:
   [7]: https://lh5.googleusercontent.com/-YPlnbcZU1SQ/UyJxxH42DqI/AAAAAAAAAd4/mbySJrKjIBo/s0/Screen+Shot+2014-03-13+at+11.03.39+PM.png "Selection"
   [8]: https://lh3.googleusercontent.com/-qbUu711c_P8/UyJx1tR6SZI/AAAAAAAAAeE/copQfRYI9o4/s0/Screen+Shot+2014-03-13+at+11.03.46+PM.png "Restaurant Page"
   [9]: https://lh5.googleusercontent.com/-7pOoSZORLbE/UyJx6_vn7pI/AAAAAAAAAeQ/QS1pNWei_-Q/s0/Screen+Shot+2014-03-13+at+11.03.54+PM.png "User Profile"
+  
+#COMMENTS BY MING
+* Data scraping of menus is really hard
+* Look into Google Places API. https://developers.google.com/places/documentation/search You can search for restaurants by price range...
