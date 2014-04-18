@@ -1,79 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-
     <title>Grilld</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron-narrow.css" rel="stylesheet">
-
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=true&amp;libraries=places">
+    </script>
   </head>
 
-  <body>
-
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="map.html">Map</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Grilld</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>Map</h1>
-        <p class="lead">Get yo grilld on.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <table>
-            <tr>
-              <td>
-                <h4>Grilld</h4>
-                <p>Get yo grilld on.</p>
-              </td>
-              <td>
-                <h4>Grilld</h4>
-                <p>Get yo grilld on.</p>
-              </td>
-              <td>
-                <h4>Grilld</h4>
-                <p>Get yo grilld on.</p>
-              </td>
-              <td>
-                <h4>Grilld</h4>
-                <p>Get yo grilld on.</p>
-              </td>
-              <td>
-                <h4>Grilld</h4>
-                <p>Get yo grilld on.</p>
-              </td>
-            </tr>
-          </table>  
-        </div>
-      </div>
-
-      <div class="footer">
+  <body onload="init()">
+    <div id="map-canvas"/>
+    <div class="footer">
         <p>&copy; Company 2014</p>
-      </div>
-
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    </div>
   </body>
+
 </html>
