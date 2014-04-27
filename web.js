@@ -8,7 +8,7 @@ var food_type = 'pizza';
 var location = 'Boston';
 
 var locu = require('locu');
-var mclient = locu.MenuItemClient(api_key);
+var mclient = new locu.MenuItemClient(api_key);
 mclient.search({name:food_type, locality: location},
 				function(result){
 					console.log(result.objects[0]);
