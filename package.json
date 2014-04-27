@@ -1,0 +1,34 @@
+{
+  "name": "grilld",
+  "version": "0.0.0",
+  "description": "Final comp20 project Grilld",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuftsdev/comp20-s2014-team20"
+  },
+  "keywords": [
+    "comp20",
+    "grilld",
+    "app"
+  ],
+  "author": "krishna-manvi-sharada-shriya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuftsdev/comp20-s2014-team20/issues"
+  },
+  "homepage": "https://github.com/tuftsdev/comp20-s2014-team20",
+  "dependencies": {
+    "logfmt": "^1.1.2",
+    "express": "^4.1.0"
+  }
+}
+
+{
+  "engines": {
+    "node": "0.10.x"
+  }
+}
