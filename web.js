@@ -3,12 +3,12 @@ var express = require("express");
 var logfmt = require("logfmt");
 var app = express();
 
-var locu_api_key = e18c6ceaae14397336d3a768afc41d7fbbd6bbca;
+var api_key = 'e18c6ceaae14397336d3a768afc41d7fbbd6bbca';
 var food_type = 'pizza';
 var location = 'Boston';
 
 var locu = require('locu');
-var mclient = locu.MenuItemClient(locu_api_key);
+var mclient = locu.MenuItemClient(api_key);
 mclient.search({name:food_type, locality: location},
 				function(result){
 					console.log(result.objects[0]);
