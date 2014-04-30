@@ -7,6 +7,7 @@ var myOptions = {
 	center: me,
 	mapTypeId: google.maps.MapTypeId.ROADMAP
 };
+var marker;
 
 function init()
 {
@@ -34,7 +35,7 @@ function renderMap()
 {
 	// Update map and go there...
 	map.panTo(me);
-
+	
 	// Create a marker
 	marker = new google.maps.Marker({
 		position: me,
