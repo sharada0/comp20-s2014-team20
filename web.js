@@ -23,6 +23,14 @@ app.get('/', function (req, res) {
   res.sendfile( __dirname + '/views/index.html');
 });
 
+app.get('/findmyfood', function (req, res) {
+  res.sendfile( __dirname + '/views/form.html');
+});
+
+app.get('/results', function (req, res) {
+  res.sendfile( __dirname + '/views/map.html');
+});
+
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
   console.log("Listening on " + port);
