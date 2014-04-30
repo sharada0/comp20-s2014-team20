@@ -1,77 +1,105 @@
-<HTML>
-<HEAD>
-<TITLE>Test Input</TITLE>
-<script src="js/form.js" ></script>
-</HEAD>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <script src="js/form.js" ></script>
 
- 
-<body>
+    <title>Grilld</title>
 
-<h1>Find My Food!</h1>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<form name="example" action="#" onsubmit="checkit(); return false">
-<table class="form">
-<tr>
-<td>Food Selection</td>
-<td><input name="food selection" /></td>
-</tr>
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
 
-<tr>
-<td>Maximum Price</td>
-<td><input name="max price" /></td>
-<td>$</td>
-</tr>
+  </head>
 
-<br>
+  <body>
 
-<tr>
-<td>Street Address</td>
-<td><input name="address" /></td>
-</tr>
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">Grilld</h3>
+      </div>
 
-<tr>
-<td>City</td>
-<td><input name="city" /></td>
-</tr>
+      <div class="jumbotron">
+        
+		<h1>Find My Food!</h1>
 
-<tr>
-<td>State</td>
-<td><select name="refer">
-<option value='' selected="selected">--- Select ---</option>
-<option value="CA">CA</option>
-<option value="NY">NY</option>
-<option value="MA">MA</option>
-<option value="FL">FL</option>
-</select>
-</td></tr>
+		<form name="example" action="#" onsubmit="checkit(); return false">
+			<table class="form">
+				<tr>
+					<td>Food Selection (ex. Pizza)</td>
+					<td><input name="food selection" /></td>
+				</tr>
 
-<!--<tr>
-<td>Why do you want to learn JavaScript?</td>
-<td><input type="radio" name="why" value="Dunno" />Dunno<br />
-<input type="radio" name="why" value="Boss" />Because my boss told me to<br />
-<input type="radio" name="why" value="Interest" />Generally interested<br />
-<input type="radio" name="why" value="Useful" />It might come in useful
-</td></tr>
-<tr>
-<td>How did you get to this site?</td>
-<td><select name="refer">
-<option value='' selected="selected">--- Select ---</option>
-<option value="random">I found it by accident</option>
-<option value="wdf">Through WDF</option>
-<option value="NetlinQ">Through NetlinQ</option>
-<option value="searchengine">Through a search engine</option>
-</select>
-</td></tr>
-<tr>
-<td>I'd like additional information about</td>
-<td><input type="checkbox" name="oranges" />oranges<br />
-<input type="checkbox" name="potatoes" />potatoes<br />
-<input type="checkbox" name="tomatoes" />tomatoes<br />
-<input type="checkbox" name="blue whales" />blue whales</td>
-</tr>-->
-<tr><td colspan="2"><input type="submit" value="Get Grilld!" /><br />
-<input type="reset" /></td></tr>
-<tr><td colspan="2"><textarea cols="30" rows="7" name="output">When you hit 'Submit' the user input will be written to this textarea</textarea></td></tr>
-</table>
-</form>
-</HTML>
+				<tr>
+					<td>Maximum Price (in $)</td>
+					<td><input name="max price" /></td>
+				</tr>
+				
+				<br>
+
+				<tr>
+					<td>Street Address</td>
+					<td><input name="address" /></td>
+				</tr>
+
+				<tr>
+					<td>City</td>
+					<td><input name="city" /></td>
+				</tr>
+
+				<tr>
+					<td>State</td>
+					<td><select name="refer">
+					<option value='' selected="selected">--- Select ---</option>
+					<option value="CA">CA</option>
+					<option value="NY">NY</option>
+					<option value="MA">MA</option>
+					<option value="FL">FL</option>
+					</select>
+					</td>
+				</tr>
+
+				<tr>	
+					<td colspan="2">
+						<input class="btn btn-default" type="submit" value="Get Grilld!" />
+						<br>
+						<br>
+						<input type="reset" />
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<textarea cols="30" rows="7" name="output">
+							When you hit 'Submit' the user input will be written to this textare
+						</textarea>
+					</td>
+				</tr>
+			</table>
+		</form>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Company 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
