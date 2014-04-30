@@ -1,26 +1,42 @@
 
 // This is the check script
 
+var food_selection;
+var max_price;
+var address;
+
 function checkit()
 {
-	// In textstring I gather the data that are finally written to the textarea.
+	// Check that all the text boxes been filled in?
 
-	var textstring = '';
-
-	// First of all, have all the text boxes been filled in?
-	// This part is treated in the normal page.
-	// I put all boxes and their values in textstring
-
-	for (i=0;i<4;i++) {
-		var box = document.forms['example'].elements[i];
+	var box = document.forms['example'].elements[0];
 		if (!box.value) {
 			alert('You haven\'t filled in ' + box.name + '!');
 			box.focus()
 			return;
 		}
-		textstring += box.name + ': ' + box.value + '\n';
-	}
+	food_selection = box.value;
 
+	var box = document.forms['example'].elements[1];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return;
+		}
+	max_price = box.value;
+
+	var box = document.forms['example'].elements[2];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return;
+		}
+	address = box.value;
+
+console.log(food_selection);
+console.log(max_price);
+
+/*
 	// Get value of the 'Why' radio buttons.
 
 	 user_input = '';
@@ -31,7 +47,6 @@ function checkit()
 	}
 	textstring += 'Why: ' + user_input + '\n';
 
-/*
 	// Get value of the 'How' select box.
 
 	user_input = document.example.refer.options[document.example.refer.selectedIndex].value
@@ -45,9 +60,7 @@ function checkit()
 			textstring += document.example.elements[i].name + ' ';
 		}
 	}
-
-	*/
-	 //Write textstring to the text area.
-
-	document.forms['example'].output.value = textstring;
+*/
+	
+	document.forms['example'].output.value = food_selection;
 }
