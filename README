@@ -10,8 +10,10 @@ Team 20:
 
 App Overview:
 Grilld is a web and mobile application that helps people keep
-a food budget by finding food close to them below a specified price maximum. It lets users look at specific menu items instead
-of just overall ranges for a restaurant so that users can decide which exact choices will be in their price range.
+a food budget by finding food close to them below a specified 
+price maximum. It lets users look at specific menu items instead 
+of just overall ranges for a restaurant so that users can decide 
+which exact choices will be in their price range.
 
 Requirements Fulfilled:
 - Uses HTML5.
