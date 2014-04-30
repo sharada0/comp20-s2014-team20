@@ -26,8 +26,27 @@
         margin: 40; 
         padding: 0 
       }
-      #map-canvas { 
-        height: 40% 
+      #map-canvas {
+        position: absolute;
+        height: 40%;
+        top: 40px;
+        left: 0px;
+        right: 0px;
+      }
+      #results_list {
+        position: absolute;   
+        top: 350px; 
+        bottom: 40px;
+        left: 0px;
+        right: 0px;    
+        height: 20px;
+      }
+      .footer {
+        position: absolute;    
+        bottom: 40px;
+        left: 0px;
+        right: 0px;    
+        height: 20px;
       }
 
     </style>
@@ -51,8 +70,7 @@
       </div>
     </div>
 
-    <div id="map-canvas"/>
-
+    <div id="results_list">
       <ul class="list-group">
         <li class="list-group-item">Cras justo odio</li>
         <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -60,7 +78,12 @@
         <li class="list-group-item">Porta ac consectetur ac</li>
         <li class="list-group-item">Vestibulum at eros</li>
       </ul>
+    </div>
 
+    <div class="footer">
+        <p>&copy; Company 2014</p>
+    </div>
+    <div id="map-canvas"/>
   </body>
 
 </html>
