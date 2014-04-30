@@ -4,6 +4,8 @@
 var food_selection;
 var max_price;
 var address;
+var city;
+var state;
 
 function checkit()
 {
@@ -33,8 +35,15 @@ function checkit()
 		}
 	address = box.value;
 
-console.log(food_selection);
-console.log(max_price);
+	var box = document.forms['example'].elements[3];
+		if (!box.value) {
+			alert('You haven\'t filled in ' + box.name + '!');
+			box.focus()
+			return;
+		}
+	city = box.value;
+
+	state = document.example.refer.options[document.example.refer.selectedIndex].value
 
 /*
 	// Get value of the 'Why' radio buttons.
@@ -47,11 +56,6 @@ console.log(max_price);
 	}
 	textstring += 'Why: ' + user_input + '\n';
 
-	// Get value of the 'How' select box.
-
-	user_input = document.example.refer.options[document.example.refer.selectedIndex].value
-	textstring += 'How: ' + user_input + '\n';
-
 	// See what checkboxes are checked. They are elements 9-12
 
 	textstring += 'More info: ';
@@ -62,5 +66,5 @@ console.log(max_price);
 	}
 */
 	
-	document.forms['example'].output.value = food_selection;
+	document.forms['example'].output.value = food_selection + '\n' + address + '\n' + city + ', ' + state;
 }
