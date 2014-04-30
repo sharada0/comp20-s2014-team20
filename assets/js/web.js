@@ -17,10 +17,9 @@ mclient.search({name:food_type, locality: location},
 app.use(logfmt.requestLogger());
 
 app.use('/assets', express.static('assets'));
-// development only
 
-app.get('/', function(req, res) {
-  res.send('Hello World!');
+app.get('/', function (req, res) {
+  res.sendfile( __dirname + '/views/index.html');
 });
 
 var port = Number(process.env.PORT || 5000);
