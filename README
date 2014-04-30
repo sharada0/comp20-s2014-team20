@@ -1,0 +1,31 @@
+Comp 20 - Web Programming
+Tufts University - Prof. Ming Chow
+Semester Group Project - Spring 2014
+
+Team 20:
+- Manvi Goyal
+- Shriya Nevatia
+- Sharada Sant
+- Krishna Soni
+
+App Overview:
+Grilld is a web and mobile application that helps people keep
+a food budget by finding food close to them below a specified 
+price maximum. It lets users look at specific menu items instead 
+of just overall ranges for a restaurant so that users can decide 
+which exact choices will be in their price range.
+
+Requirements Fulfilled:
+- Uses HTML5.
+- Uses JavaScript, jQuery, and Ajax.
+- Uses GitHub private repo.
+- Has desktop and mobile web user interfaces. 
+- Uses a server-side framework or technology: Node.js
+- Uses 2 APIs, Google Maps API & Locu, with JSON parsing
+
+"Pick Five" Options Fulfilled:
+- Geolocation
+- Server-side data persistence (Restaurant history) with MongoDB
+- Client-side data persistence with local storage
+- Front-end framework Bootstrap
+- Reporting with charts & graphs
