@@ -39,29 +39,19 @@
         
 		<h1>Find My Food!</h1>
 
-		<form action="/formdata" method="POST">
-			<table class="form">
-				<tr>
-					<td>Food Selection (ex. Pizza)</td>
-					<td><input name="food_selection" /></td>
-				</tr>
+		<form role="form">
+      <div class="form-group">
+        <label for="inputFood">Food Selection (ex. Pizza)</label>
+        <input type="text" class="form-control" id="inputFood" placeholder="Enter food type">
+      </div>
 
-				<tr>
-					<td>Maximum Price (in $)</td>
-					<td><input name="max_price" /></td>
-				</tr>
+				<div class="form-group">
+          <label for="price">Price (in $)</label>
+          <input type="text" class="form-control" id="price" placeholder="Positive number">
+        </div>
 				
-				<!-- add hidden input fields for geolocation -->
-
-				<tr>	
-					<td colspan="2">
-						<br>
-					<input type="submit" value="Submit">	
-						<br>
-						<br>
-					</td>
-				</tr>
-			</table>
+				<button type="submit" class="btn btn-warning">Get Grilld!</button>
+     
 		</form>
       </div>
 
