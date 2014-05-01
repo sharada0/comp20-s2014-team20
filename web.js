@@ -55,6 +55,7 @@ app.post('/formdata', function (req, res) {
     console.log("route hit");
     console.log(req.body.food_selection);
     console.log(req.body.max_price);
+    res.redirect('/');
 });
 
 // get search results
