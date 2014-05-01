@@ -29,8 +29,8 @@ var locu = require('locu');
 */
 
 app.use(logfmt.requestLogger());
-
 app.use('/assets', express.static('assets'));
+//app.use(express.logger('dev'));
 
 // get index
 app.get('/', function (req, res) {
@@ -50,6 +50,7 @@ app.get('/findmyfood', function (req, res) {
 
 // post form data from find my food?
 app.post('/formdata', function (req, res) {
+    console.log("route hit");
     console.log(req.body.food_selection);
     console.log(req.body.max_price);
 });

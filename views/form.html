@@ -39,7 +39,7 @@
         
 		<h1>Find My Food!</h1>
 
-		<form name="findfood" action="/formdata" method="POST" onsubmit="checkit(); return false">
+		<form name="findfood" action="/formdata" method="POST" >
 			<table class="form">
 				<tr>
 					<td>Food Selection (ex. Pizza)</td>
@@ -52,25 +52,15 @@
 				</tr>
 				
 				<br>
-				
+
 				<tr>	
 					<td colspan="2">
 						<br>
-						<a class="btn btn-lg btn-warning" href="/results" role="button" type="submit">Get Grilld!</a>
+						<input class="btn btn-lg btn-warning" href="/results" role="button" type="submit" value="Get Grilld!"></input>
 						<br>
 						<br>
-<!-- FOR DEBUGGING ONLY	<input type="reset" /> -->
 					</td>
 				</tr>
-			<!-- FOR DEBUGGING ONLY
-				<tr>
-					<td colspan="2">
-						<textarea cols="30" rows="7" name="output">
-							When you hit 'Submit' the user input will be written to this textare
-						</textarea>
-					</td>
-				</tr>
-			-->
 			</table>
 		</form>
       </div>
