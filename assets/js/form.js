@@ -67,7 +67,7 @@ function checkit()
       });  
 
 
-/*
+
 function saveText(){
     		var dataJSON = "[";
 
@@ -80,9 +80,11 @@ function saveText(){
     		}
     		dataJSON += " ]";
     		localStorage.setItem('food_selection', dataJSON);
+        localStorage.setItem('max_price', dataJSON);
     	
     	if(localStorage.data != undefined){
-        		var m_price = document.getElementById("max_price");
+        		var myFood = document.getElementById("food_selection");
+            var myPrice = document.getElementById("max_price");
          		store = JSON.parse(localStorage.data);
 
         			for(var i = 0; i < store.length; i ++){
@@ -98,4 +100,4 @@ function saveText(){
           			}
           		}
           		
-          		*/
+          	

@@ -2,6 +2,7 @@
 var express = require("express");
 var logfmt = require("logfmt");
 var app = express();
+var bodyParser = require('body-parser');
 
 var api_key = 'e18c6ceaae14397336d3a768afc41d7fbbd6bbca';
 //var food_type = 'pizza';
@@ -29,6 +30,7 @@ var locu = require('locu');
 */
 
 app.use(logfmt.requestLogger());
+app.use(bodyParser());
 app.use('/assets', express.static('assets'));
 //app.use(express.logger('dev'));
 

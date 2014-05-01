@@ -39,7 +39,7 @@
         
 		<h1>Find My Food!</h1>
 
-		<form name="findfood" action="/formdata" method="POST" >
+		<form name="findfood" href="/formdata" method="POST">
 			<table class="form">
 				<tr>
 					<td>Food Selection (ex. Pizza)</td>
@@ -51,12 +51,12 @@
 					<td><input name="max_price" /></td>
 				</tr>
 				
-				<br>
+				<!-- add hidden input fields for geolocation -->
 
 				<tr>	
 					<td colspan="2">
 						<br>
-						<input class="btn btn-lg btn-warning" href="/results" role="button" type="submit" value="Get Grilld!"></input>
+						<input class="btn btn-lg btn-warning" href="/results" role="button" type="submit" value="Get Grilld!" onclick="saveText()"></input>
 						<br>
 						<br>
 					</td>
