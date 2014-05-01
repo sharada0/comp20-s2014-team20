@@ -44,11 +44,9 @@ function checkit()
 			return;
 		}
 	max_price = box.value;
-
-
-//	document.forms['example'].output.value = food_selection + '\n' + max_price +'\n';
-
 }
+
+
     var locu = require('locu');
     var mclient = locu.MenuItemClient(e18c6ceaae14397336d3a768afc41d7fbbd6bbca); 
     mclient.search({name: food_selection, 
