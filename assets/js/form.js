@@ -45,10 +45,11 @@ function checkit()
 		}
 	max_price = box.value;
 
-	
-	document.forms['example'].output.value = food_selection + '\n' + max_price +'\n';
+
+//	document.forms['example'].output.value = food_selection + '\n' + max_price +'\n';
+
 }
-/*
+
 var locu = require('locu');
 var mclient = locu.MenuItemClient(e18c6ceaae14397336d3a768afc41d7fbbd6bbca); // KEY is your API key, found on dev.locu.com
 mclient.search({name: food_selection, 
@@ -57,11 +58,19 @@ mclient.search({name: food_selection,
 			   has_menu:true, 
 			   location:(myLat,myLng),
 			   radius:maxRadius}, 
-	function(result){
-				console.log(result);
- 
-});
+	function displayResults(result){
+        var len = 20;
+				if (result.length < 20) {
+          len = result.length;
+        }
+        for (var i = 0; i < len; i++) {
+          var restaurant = result.objects[i];
 
+        }
+ 
+  });
+
+/*
 function saveText(){
     		var dataJSON = "[";
 
