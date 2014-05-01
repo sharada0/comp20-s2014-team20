@@ -44,10 +44,9 @@ function myLocation(){
   {
     alert("Geolocation Not supported on this browser!");
   }
-
 }
 
-
+/*
 function getMyLocation()
 {
 	if (navigator.geolocation) { // the navigator.geolocation object is supported on your browser
@@ -61,7 +60,7 @@ function getMyLocation()
 		alert("Geolocation is not supported by your web browser.  What a shame!");
 	}
 }
-/*
+
 function renderMap()
 {
 	// Update map and go there...
