@@ -35,6 +35,10 @@ app.get('/restaurant', function (req, res) {
   res.sendfile( __dirname + '/views/restaurant.html');
 });
 
+app.get('/history', function (req, res) {
+  res.sendfile( __dirname + '/views/history.html');
+});
+
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
   console.log("Listening on " + port);
