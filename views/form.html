@@ -16,7 +16,11 @@
 
     <!-- Custom styles for this template -->
     <link href="../assets/css/jumbotron-narrow.css" rel="stylesheet">
-
+    <style type="text/css">
+      #title_text {
+        color:#eea236;
+      }
+    </style>
   </head>
 
   <body>
@@ -27,7 +31,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/findmyfood">Find My Food</a></li>
         </ul>
-        <a href="/"><h3 class="text-muted">Grilld</h3></a>
+        <a href="/"><h3 id="title_text">Grilld</h3></a>
       </div>
 
       <div class="jumbotron">
@@ -47,7 +51,8 @@
 				</tr>
 				
 				<br>
-
+<!-- Commenting this out because we should Geolocate user's location -->
+<!--
 				<tr>
 					<td>Street Address</td>
 					<td><input name="address" /></td>
@@ -69,16 +74,17 @@
 					</select>
 					</td>
 				</tr>
-
+-->
 				<tr>	
 					<td colspan="2">
-						<input class="btn btn-default" type="submit" value="Get Grilld!" />
+						<br>
+						<input class="btn btn-warning" type="submit" value="Get Grilld!" />
 						<br>
 						<br>
-						<input type="reset" />
+<!-- FOR DEBUGGING ONLY	<input type="reset" /> -->
 					</td>
 				</tr>
-
+			<!-- FOR DEBUGGING ONLY
 				<tr>
 					<td colspan="2">
 						<textarea cols="30" rows="7" name="output">
@@ -86,6 +92,7 @@
 						</textarea>
 					</td>
 				</tr>
+			-->
 			</table>
 		</form>
       </div>
