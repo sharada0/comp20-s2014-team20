@@ -8,26 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
     <script src="../assets/js/form.js" ></script>
-    <script type="text/javascript">
-	    var locu = require('locu');
-		var mclient = locu.MenuItemClient(e18c6ceaae14397336d3a768afc41d7fbbd6bbca); 
-		mclient.search({name: food_selection, 
-					   category: food_selection, 
-					   price: max_price, 
-					   has_menu:true, 
-					   location:(myLat,myLng),
-					   radius:maxRadius}, 
-		function displayResults(result){
-	        var len = 20;
-					if (result.length < 20) {
-	          len = result.length;
-	        }
-	        for (var i = 0; i < len; i++) {
-	          var restaurant = result.objects[i];
 
-	        } 
-  		});  
-    </script>
     <title>Grilld</title>
 
     <!-- Bootstrap core CSS -->
@@ -58,43 +39,20 @@
         
 		<h1>Find My Food!</h1>
 
-		<form name="findfood" action="#" onsubmit="checkit(); return false">
+		<form name="findfood" action="/formdata" method="POST" onsubmit="checkit(); return false">
 			<table class="form">
 				<tr>
 					<td>Food Selection (ex. Pizza)</td>
-					<td><input name="food selection" /></td>
+					<td><input name="food_selection" /></td>
 				</tr>
 
 				<tr>
 					<td>Maximum Price (in $)</td>
-					<td><input name="max price" /></td>
+					<td><input name="max_price" /></td>
 				</tr>
 				
 				<br>
-<!-- Commenting this out because we should Geolocate user's location -->
-<!--
-				<tr>
-					<td>Street Address</td>
-					<td><input name="address" /></td>
-				</tr>
-
-				<tr>
-					<td>City</td>
-					<td><input name="city" /></td>
-				</tr>
-
-				<tr>
-					<td>State</td>
-					<td><select name="refer">
-					<option value='' selected="selected">--- Select ---</option>
-					<option value="CA">CA</option>
-					<option value="NY">NY</option>
-					<option value="MA">MA</option>
-					<option value="FL">FL</option>
-					</select>
-					</td>
-				</tr>
--->
+				
 				<tr>	
 					<td colspan="2">
 						<br>
