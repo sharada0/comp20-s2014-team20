@@ -12,10 +12,43 @@ var marker;
 function init()
 {
 	map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
-	getMyLocation();
+	myLocation();
 
 //	google.maps.event.addDomListener(window, 'load', getMyLocation);
 }
+
+function myLocation(){
+  if(navigator.geolocation)
+  {
+    navigator.geolocation.getCurrentPosition(function(position) {
+              myLat = position.coords.latitude;
+              myLng = position.coords.longitude;
+              var myLoc = new google.maps.LatLng(myLat, myLng);
+              map.setCenter(myLoc);
+              marker = new google.maps.Marker({
+                  position: myLoc,
+                  map: map,
+                  title: "Your Location"
+              });
+          marker['infoWindow']= new google.maps.InfoWindow({
+            content: "You are here! ("+myLat.toFixed(4)+", "+myLng.toFixed(4)+")"
+              });
+          
+          google.maps.event.addListener(marker, 'click', function() {
+              this['infoWindow'].open(map, this)
+              }); 
+    });
+  }
+  else
+  {
+    alert("Geolocation Not supported on this browser!");
+  }
+
+}
+
+
+
+
 
 function getMyLocation()
 {
