@@ -16,7 +16,7 @@ function init()
 	map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
 	getMyLocation();
 }
-
+/*
 function myLocation(){
   if(navigator.geolocation)
   {
@@ -47,7 +47,7 @@ function myLocation(){
 
 }
 
-
+*/
 function getMyLocation()
 {
 	if (navigator.geolocation) { // the navigator.geolocation object is supported on your browser
