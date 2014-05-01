@@ -48,7 +48,7 @@ function checkit()
 	
 	document.forms['example'].output.value = food_selection + '\n' + max_price +'\n';
 }
-
+/*
 var locu = require('locu');
 var mclient = locu.MenuItemClient(e18c6ceaae14397336d3a768afc41d7fbbd6bbca); // KEY is your API key, found on dev.locu.com
 mclient.search({name: food_selection, 
@@ -91,3 +91,5 @@ function saveText(){
           				}
           			}
           		}
+          		
+          		*/
