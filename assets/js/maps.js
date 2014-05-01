@@ -61,7 +61,7 @@ function getMyLocation()
 		alert("Geolocation is not supported by your web browser.  What a shame!");
 	}
 }
-
+/*
 function renderMap()
 {
 	// Update map and go there...
@@ -84,3 +84,4 @@ function renderMap()
                 
     marker.setMap(map);
 }
+*/
