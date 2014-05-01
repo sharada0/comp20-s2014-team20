@@ -68,9 +68,10 @@ app.get('/restaurant', function (req, res) {
   res.sendfile( __dirname + '/views/restaurant.html');
 });
 
-app.get('/restaurant2'),function (req, res) {
+app.get('/restaurant2',function (req, res) {
   res.sendfile( __dirname + '/views/restaurant2.html');
 });
+
 // get user history
 app.get('/history', function (req, res) {
   res.sendfile( __dirname + '/views/history.html');
