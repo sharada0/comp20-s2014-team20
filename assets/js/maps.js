@@ -13,8 +13,6 @@ function init()
 {
 	map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
 	myLocation();
-
-//	google.maps.event.addDomListener(window, 'load', getMyLocation);
 }
 
 function myLocation(){
@@ -45,9 +43,6 @@ function myLocation(){
   }
 
 }
-
-
-
 
 
 function getMyLocation()
