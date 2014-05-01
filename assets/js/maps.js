@@ -8,11 +8,13 @@ var myOptions = {
 	mapTypeId: google.maps.MapTypeId.ROADMAP
 };
 var marker;
+var image_file = '../mapicon.png';
+
 
 function init()
 {
 	map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
-	myLocation();
+	getMyLocation();
 }
 
 function myLocation(){
@@ -23,7 +25,8 @@ function myLocation(){
               myLng = position.coords.longitude;
               var myLoc = new google.maps.LatLng(myLat, myLng);
               map.setCenter(myLoc);
-              marker = new google.maps.Marker({
+              
+            var marker = new google.maps.Marker({
                   position: myLoc,
                   map: map,
                   title: "Your Location"
