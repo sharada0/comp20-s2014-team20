@@ -7,6 +7,8 @@ var address;
 var city;
 var state;
 
+data = Array();
+
 function checkit()
 {
 	// Check that all the text boxes been filled in?
@@ -68,3 +70,39 @@ function checkit()
 	
 	document.forms['example'].output.value = food_selection + '\n' + address + '\n' + city + ', ' + state;
 }
+
+var locu = require('locu');
+var mclient = locu.MenuItemClient(e18c6ceaae14397336d3a768afc41d7fbbd6bbca); // KEY is your API key, found on dev.locu.com
+mclient.search({name: food_selection, price: max_price}, function(result){
+ 
+... });
+
+function saveText(){
+    		var dataJSON = "[";
+
+    		for(var i = 0; i < data.length; i ++){
+       			dataJSON += "{\"val\":\"" + data[i].innerHTML + "\"}";
+       			
+       				if(i < data.length -1){
+          				dataJSON += ",";
+       				}
+    		}
+    		dataJSON += " ]";
+    		localStorage.setItem('food_selection', dataJSON);
+    	
+    	if(localStorage.data != undefined){
+        		var m_price = document.getElementById("max_price");
+         		store = JSON.parse(localStorage.data);
+
+        			for(var i = 0; i < store.length; i ++){
+          				var newElement = document.createElement('p');
+          				newElemnt.innerHTML = store[store.length-1-i].val;
+          					
+          					if (status.firstChild){
+           						status.insertBefore(newElement, status.firstChild);
+          					}else{
+            					status.appendChild(newElement);
+          					}
+          				}
+          			}
+          		}
